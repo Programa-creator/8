@@ -1,6 +1,6 @@
 public class ArrayValueCalculator {
 
-    void doCalc(String[][] array)throws Exception{
+    int doCalc(String[][] array)throws Exception{
         if(array.length != 4 || array[0].length != 4) {
             throw new ArraySizeException();
         }
@@ -15,8 +15,6 @@ public class ArrayValueCalculator {
                  }
                 }
             }
-            System.out.println(sum);
-
-
+            return sum;
     }
 }

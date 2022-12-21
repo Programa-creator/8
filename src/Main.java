@@ -8,7 +8,7 @@ public class Main {
 
         ArrayValueCalculator a = new ArrayValueCalculator();
         try {
-            a.doCalc(array);
+            System.out.println(a.doCalc(array));
         }
         catch (ArraySizeException | ArrayDataException e){
             e.printStackTrace();
